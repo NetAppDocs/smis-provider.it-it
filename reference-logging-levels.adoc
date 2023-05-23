@@ -1,0 +1,38 @@
+---
+permalink: reference-logging-levels.html 
+sidebar: sidebar 
+keywords: messages, specify, logged 
+summary: 'È possibile specificare i tipi di messaggi registrati (ad esempio, si desidera che vengano registrati solo messaggi di sistema irreversibili).' 
+---
+= Livelli di registrazione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile specificare i tipi di messaggi registrati (ad esempio, si desidera che vengano registrati solo messaggi di sistema irreversibili).
+
+È possibile configurare il livello di registrazione in uno dei seguenti modi:
+
+* *TRACCIA*
++
+Salva i messaggi di traccia nel log cimserver_standard.
+
+* *INFORMAZIONI*
++
+Registra tutti i messaggi di sistema (informativi, di avviso, gravi e fatali).
+
+* *ATTENZIONE*
++
+Registra messaggi di avviso, gravi e fatali del sistema.
+
+* *GRAVE*
++
+Registra messaggi di sistema gravi e fatali
+
+* *FATALE*
++
+Registra solo messaggi di sistema irreversibili.
+
+

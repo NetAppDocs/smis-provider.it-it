@@ -1,0 +1,28 @@
+---
+permalink: reference-smb-share-size-dropping-to-0-in-scvmm.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemi riscontrati con NetApp SMI-S Provider. 
+---
+= Dimensione della condivisione SMB che scende a 0 in SCVMM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Problema*
++
+Le dimensioni delle condivisioni SMB 3.0 nuove o esistenti possono scendere a 0 in System Center Virtual Machine Manager (SCVMM).
+
+* *Causa*
++
+Questo problema si verifica quando la reinizializzazione delle quote richiede molto tempo in Data ONTAP a causa dell'elevato i/o, le dimensioni delle condivisioni SMB 3.0 nuove o esistenti possono scendere a 0 in SCVMM. Per questo motivo, non è possibile eseguire il provisioning di nuove VM sulle condivisioni SMB 3.0 nuove o esistenti.
+
+* *Azione correttiva*
++
+.. Disattivare le quote.
+.. Aggiungere una regola di quota predefinita di tipo "`tree`" su ciascun volume che ospita le condivisioni SMB.
+.. Attivare le quote per i volumi ai quali è stata aggiunta una regola di quota predefinita e riavviare il provider SMI-S.
+
+
+

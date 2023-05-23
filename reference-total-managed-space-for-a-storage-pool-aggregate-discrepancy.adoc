@@ -1,0 +1,25 @@
+---
+permalink: reference-total-managed-space-for-a-storage-pool-aggregate-discrepancy.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemi riscontrati con NetApp SMI-S Provider. 
+---
+= Spazio gestito totale per una discrepanza di un pool di storage (volume)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Problema*
++
+Se si utilizza un altro strumento di gestione dello storage, ad esempio FilerView, è possibile che si notino dimensioni diverse per lo spazio gestito totale di un pool di storage (volume) rispetto alle dimensioni restituite dal provider SMI-S.
+
+* *Causa*
++
+Questa discrepanza si verifica perché le dimensioni restituite dal provider SMI-S includono WAFL e Snapshot Reserve, mentre FilerView e altri strumenti mostrano solo lo spazio utilizzabile, escludendo WAFL e Snapshot Reserve.
+
+* *Azione correttiva*
++
+Si tratta di un comportamento previsto, senza alcuna azione correttiva.
+
+

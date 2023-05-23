@@ -1,0 +1,45 @@
+---
+permalink: reference-smis-pools.html 
+sidebar: sidebar 
+keywords: smis pools, command, list, storage, pools 
+summary: Il comando smi Pools elenca i pool di storage per i sistemi storage. 
+---
+= pool di smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il `smis pools` il comando elenca i pool di storage per i sistemi storage.
+
+.Sintassi
+`smis pools`
+
+`[-t {*http* | *https*}]`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Un utente con un nome utente e una password validi
+
+.Parametri
+* `*[-t {http | https}]*`
++
+Protocollo da utilizzare: HTTPS (impostazione predefinita) o HTTP
+
+
+
+.Esempio
+Il `smis pools` comando e relativo output abbreviato:
+
+[listing]
+----
+smis pools
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:d46de7f0-3925-11df-8516-00a0980558ea"
+ONTAP_ConcretePool.InstanceID="ONTAP:0084259609:51927ab0-28b5-11df-92b2-00a0980558ea"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Spare"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Other"
+ONTAP_DiskPrimordialPool.InstanceID="ONTAP:0084259609:Present"
+----

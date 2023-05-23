@@ -1,0 +1,36 @@
+---
+permalink: reference-access-is-denied-error.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemi riscontrati con NetApp SMI-S Provider. 
+---
+= Errore accesso negato
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+* *Messaggio*
++
+`Access is denied.`
+
+* *Descrizione*
++
+Questo messaggio si verifica in due situazioni possibili:
+
++
+** Se non si è connessi come amministratore quando si accede al provider SMI-S dal menu di scelta rapida Start
+** Se la directory del provider SMI-S non fa riferimento a. `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+
+* *Azione correttiva*
++
+Completare l'azione corrispondente alla situazione:
+
++
+** Accedere con privilegi di amministratore e riaprire il provider SMI-S dal menu Start oppure fare clic con il pulsante destro del mouse e selezionare *Esegui come amministratore*.
+** Accedere con privilegi di livello Administrator e modificare manualmente la directory in `C:\Program Files (x86)\NetApp\smis\pegasus\bin`.
+
+
+

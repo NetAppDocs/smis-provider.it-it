@@ -1,0 +1,41 @@
+---
+permalink: reference-smis-list.html 
+sidebar: sidebar 
+keywords: smis list, command, display, storage, add 
+summary: 'Il comando smi list (elenco smi) visualizza i sistemi di storage aggiunti.' 
+---
+= elenco smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il `smis list` il comando visualizza i sistemi storage aggiunti.
+
+.Sintassi
+elenco smi
+
+`[-t {*http* | *https*}]`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Un utente con un nome utente e una password validi
+
+.Parametri
+* `*[-t {http | https}]*`
++
+Protocollo da utilizzare: HTTPS (impostazione predefinita) o HTTP
+
+
+
+.Esempio
+Il `smis list` comando e relativo output:
+
+[listing]
+----
+smis list
+ONTAP_FilerData.hostName="10.16.180.122",port=80
+----

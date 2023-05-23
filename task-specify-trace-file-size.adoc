@@ -1,0 +1,31 @@
+---
+permalink: task-specify-trace-file-size.html 
+sidebar: sidebar 
+keywords: trace, enable, trace, file, size, environment, variable, 10 mb 
+summary: Se la funzione di traccia è attivata, la dimensione massima del file di traccia è di 100 MB per impostazione predefinita. È possibile aumentare o diminuire la dimensione massima del file di traccia impostando la variabile di ambiente PEGASUS_TRACE_FILE_SIZE. Il valore delle dimensioni del file di traccia può essere compreso tra 10 MB e 2 GB. 
+---
+= Specificare la dimensione del file di traccia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se la funzione di traccia è attivata, la dimensione massima del file di traccia è di 100 MB per impostazione predefinita. È possibile aumentare o diminuire la dimensione massima del file di traccia impostando la variabile di ambiente `PEGASUS_TRACE_FILE_SIZE`. Il valore delle dimensioni del file di traccia può essere compreso tra 10 MB e 2 GB.
+
+.Prima di iniziare
+* È necessario disporre delle credenziali di accesso come amministratore.
+* È necessario aver già effettuato l'accesso al sistema host come amministratore.
+
+
+.Fasi
+. Accedi al provider SMI-S di NetApp.
+. Creare una variabile di ambiente di sistema o utente denominata `PEGASUS_TRACE_FILE_SIZE` con la nuova dimensione del file di traccia in byte.
++
+La _documentazione di Windows_ contiene ulteriori informazioni sulla creazione di variabili di ambiente.
+
+. Riavviare il server CIM:
++
+`*smis cimserver restart*`
+
+

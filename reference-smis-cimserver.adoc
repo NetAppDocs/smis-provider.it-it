@@ -1,0 +1,44 @@
+---
+permalink: reference-smis-cimserver.html 
+sidebar: sidebar 
+keywords: smis cimserver, command, start, stop, restart, cim server 
+summary: Il comando cimserver smi avvia, arresta, riavvia o ottiene lo stato del server CIM. 
+---
+= cimserver smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il `smis cimserver` Command avvia, arresta, riavvia o ottiene lo stato del server CIM.
+
+.Sintassi
+`smis cimserver`
+
+`{*start* | *stop* | *restart* | *status*}`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Amministratore (Windows)
+
+.Parametri
+* *start*
++
+Avviare il server CIM.
+
+* *stop*
++
+Arrestare il server CIM.
+
+* *riavviare*
++
+Riavviare il server CIM.
+
+* *stato*
++
+Ottenere lo stato del server CIM.
+
+

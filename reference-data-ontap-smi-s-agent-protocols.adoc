@@ -1,0 +1,24 @@
+---
+permalink: reference-data-ontap-smi-s-agent-protocols.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, cim-xml, encoding, https, service, location, protocol 
+summary: 'Il provider SMI-S di NetApp utilizza la codifica CIM-XML su HTTPS e il protocollo SLP (Service Location Protocol).' 
+---
+= Protocolli NetApp SMI-S Provider
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il provider SMI-S di NetApp utilizza la codifica CIM-XML su HTTPS e il protocollo SLP (Service Location Protocol).
+
+* *Codifica CIM-XML su HTTPS*
++
+Protocollo che scambia informazioni tra un client di gestione abilitato WBEM (Web-Based Enterprise Management) e il server CIMOM. La codifica CIM-XML su HTTPS utilizza il protocollo CIM come payload e HTTPS come trasporto. È supportato anche HTTP.
+
+* *SLP*
++
+Protocollo di rilevamento che rileva i servizi WBEM all'interno di una LAN.
+
+

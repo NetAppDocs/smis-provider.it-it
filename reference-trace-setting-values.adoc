@@ -1,0 +1,92 @@
+---
+permalink: reference-trace-setting-values.html 
+sidebar: sidebar 
+keywords: specify, comments, trace, target, change, location 
+summary: È possibile specificare i componenti da tracciare, la destinazione della traccia e il livello di traccia. In alternativa, è possibile modificare il nome e la posizione del file di traccia se non si desidera utilizzare il nome e la posizione del file di traccia predefiniti. 
+---
+= Valori di impostazione della traccia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile specificare i componenti da tracciare, la destinazione della traccia e il livello di traccia. In alternativa, è possibile modificare il nome e la posizione del file di traccia se non si desidera utilizzare il nome e la posizione del file di traccia predefiniti.
+
+È possibile configurare le seguenti impostazioni di traccia:
+
+* *TraceComponents*
++
+Specifica i componenti da tracciare. Per impostazione predefinita, tutti i componenti vengono tracciati.
+
+* *TraceFacility*
++
+Specifica la destinazione in cui vengono scritti i messaggi di traccia:
+
++
+** File
++
+Questo è il valore predefinito che specifica che i messaggi di traccia vengono scritti nel file specificato dall'opzione di configurazione traceFilePath.
+
+** Log (Registro)
++
+Specifica che i messaggi di traccia vengono scritti nel file di log cimserver_standard.
+
+
+
+* *TraceFilePath*
++
+Specifica la posizione del file di traccia. Per impostazione predefinita, il file di traccia è denominato `cimserver.trc` e si trova in `traces` directory.
+
+* *TRACELEVEL*
++
+Specifica il livello di traccia. Per impostazione predefinita, la traccia è disattivata.
+
++
+[cols="2*"]
+|===
+| Livello di traccia | Messaggi di traccia scritti 
+
+
+ a| 
+0
+ a| 
+La traccia è disattivata.
+
+
+
+ a| 
+1
+ a| 
+Messaggi gravi e registrati.
+
+
+
+ a| 
+2
+ a| 
+Messaggi di base relativi alla traccia del flusso (dettagli dei dati ridotti)
+
+
+
+ a| 
+3
+ a| 
+Flusso logico interfunzione (dettaglio dei dati medi)
+
+
+
+ a| 
+4
+ a| 
+Elevato dettaglio dei dati
+
+
+
+ a| 
+5
+ a| 
+Dettagli dati elevati + metodo di invio e uscita
+
+|===
+

@@ -1,0 +1,41 @@
+---
+permalink: reference-smis-cimom.html 
+sidebar: sidebar 
+keywords: smis cimon, command, cim object manager 
+summary: Il comando simi cimom descrive il gestore di oggetti CIM. 
+---
+= cimom. smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il `smis cimom` Il comando descrive il gestore di oggetti CIM.
+
+.Sintassi
+cimom. smi `[-t {*http* | *https*}]`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Un utente con un nome utente e una password validi
+
+.Parametri
+* `*[-t {http | https}]*`
++
+Protocollo da utilizzare: HTTPS (impostazione predefinita) o HTTP
+
+
+
+.Esempio
+Il `smis cimom` comando e relativo output:
+
+[listing]
+----
+smis cimom
+PG_ObjectManager.CreationClassName="PG_ObjectManager",
+Name="PG:1297121114307-10-229-89-243",
+SystemCreationClassName="PG_ComputerSystem",SystemName="10.1.2.3"
+----

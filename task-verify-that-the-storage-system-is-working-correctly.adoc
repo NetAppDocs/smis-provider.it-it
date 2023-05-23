@@ -1,0 +1,86 @@
+---
+permalink: task-verify-that-the-storage-system-is-working-correctly.html 
+sidebar: sidebar 
+keywords: smi-s provider, configure, least storage, cimom repository storage, working, correctly 
+summary: Prima di poter configurare il provider SMI-S, è necessario aggiungere almeno un sistema storage al repository CIMOM e verificare che il sistema storage funzioni correttamente. 
+---
+= Verificare che il sistema storage funzioni correttamente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Prima di poter configurare il provider SMI-S, è necessario aggiungere almeno un sistema storage al repository CIMOM e verificare che il sistema storage funzioni correttamente.
+
+.Prima di iniziare
+* È necessario aver già effettuato l'accesso come amministratore.
+* È necessario aver già effettuato l'accesso al provider SMI-S.
+
+
+.Fasi
+. Aggiungere almeno un sistema storage al repository CIMOM:
++
+[cols="2*"]
+|===
+| Per aggiungere un sistema storage con... | Immettere questo comando... 
+
+
+ a| 
+Connessione HTTP tra il provider e il sistema di storage
+ a| 
+`*smis add _storage_sys storage_sys_user_*`
+
+
+
+ a| 
+Connessione HTTPS tra il provider e il sistema di storage
+ a| 
+`*smis addsecure _storage_sys storage_sys_user_*`
+
+|===
++
+Il comando attende fino a 15 minuti per consentire al provider di aggiornare la cache e rispondere.
+
+. Verificare l'output dei seguenti comandi:
++
+[cols="2*"]
+|===
+| Per questo comando... | Verificare che... 
+
+
+ a| 
+`smis list`
+ a| 
+Il numero di elementi corrisponde al numero di sistemi storage gestiti.
+
+
+
+ a| 
+`smis disks`
+ a| 
+Il numero di dischi corrisponde al numero totale di dischi su tutti i sistemi di storage.
+
+
+
+ a| 
+`smis luns`
+ a| 
+Il numero di LUN corrisponde al numero totale di LUN su tutti i sistemi storage.
+
+
+
+ a| 
+`smis pools`
+ a| 
+Il numero di ONTAP_ConcretePools corrisponde al numero totale di aggregati su tutti i sistemi storage.
+
+
+
+ a| 
+`smis volumes`
+ a| 
+Il numero di volumi corrisponde al numero totale di volumi su tutti i sistemi storage.
+
+|===
+

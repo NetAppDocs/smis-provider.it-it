@@ -1,0 +1,26 @@
+---
+permalink: concept-preconfiguration-task-overview.html 
+sidebar: sidebar 
+keywords: smi-s provider, first time, validate, preliminary, configuration 
+summary: Prima di utilizzare SMI-S Provider per la prima volta, è necessario convalidare la configurazione preliminare. 
+---
+= Panoramica
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Prima di utilizzare SMI-S Provider per la prima volta, è necessario convalidare la configurazione preliminare.
+
+Eseguire le seguenti operazioni prima di utilizzare il provider SMI-S:
+
+. Dal provider SMI-S di NetApp, verificare che il server CIM sia avviato.
+. Aggiungere un utente del server CIM.
+. Verificare la gestione del sistema storage aggiungendo almeno un sistema storage per il provider SMI-S.
+. *Opzionale:* genera un certificato autofirmato per CIMOM.
+
+
+Per impostazione predefinita, l'autenticazione è attivata per il provider SMI-S.
+
+Dopo aver eseguito correttamente questa convalida, puoi iniziare a gestire i tuoi sistemi storage utilizzando NetApp SMI-S Provider.

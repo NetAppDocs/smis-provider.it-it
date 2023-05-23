@@ -1,0 +1,36 @@
+---
+permalink: task-specify-the-maximum-number-of-threads-per-message-service-queue.html 
+sidebar: sidebar 
+keywords: default, smi-s provider, 80 threads, per message, service queue, machine performance 
+summary: 'Per impostazione predefinita, il provider SMI-S consente 80 thread per coda di servizio messaggi. È possibile specificare il valore massimo del thread da 1 a 5000. L"aumento del numero massimo di thread può influire sulle prestazioni del computer SMI-S Provider, quindi valutare attentamente se è necessario aumentare questo valore.' 
+---
+= Specificare il numero massimo di thread per coda del servizio messaggi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per impostazione predefinita, il provider SMI-S consente 80 thread per coda di servizio messaggi. È possibile specificare il valore massimo del thread da 1 a 5000. L'aumento del numero massimo di thread può influire sulle prestazioni del computer SMI-S Provider, quindi valutare attentamente se è necessario aumentare questo valore.
+
+.Prima di iniziare
+* È necessario disporre delle credenziali di accesso come amministratore.
+* È necessario aver già effettuato l'accesso al sistema host come amministratore.
+
+
+.A proposito di questa attività
+Se il file di traccia mostra molte righe di `insufficient resources` output, è necessario aumentare il numero di thread in incrementi di 500.
+
+Se si imposta il numero massimo di thread su meno di 20, utilizzare `*cimcli -n root/ontap niall*` il provider non risponde e restituisce `Insufficient threadpool` nel file di traccia. In questo caso, è necessario aumentare il numero di thread con incrementi di 500 e riavviare il provider.
+
+.Fasi
+. Accedi al provider SMI-S di NetApp.
+. Creare una variabile di ambiente di sistema o utente denominata `PEGASUS_MAX_THREADS_PER_SVC_QUEUE` con il nuovo valore massimo di thread.
++
+Per informazioni sulla creazione di variabili di ambiente, consultare la documentazione di Windows.
+
+. Riavviare il server CIM:
++
+`*smis cimserver restart*`
+
+

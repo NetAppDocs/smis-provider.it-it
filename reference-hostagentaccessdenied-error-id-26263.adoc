@@ -1,0 +1,35 @@
+---
+permalink: reference-hostagentaccessdenied-error-id-26263.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemi riscontrati con NetApp SMI-S Provider. 
+---
+= HostAgentAccessDenied (ID: 26263)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+
+
+== Messaggio
+
+`Registration of storage provider _smis_provider_machine_ for user _name_ failed from _SCVMM__ _(machine)_ with error code HostAgentAccessDenied. Specify valid provider, port and user credentials for storage discovery. ID: 26263`
+
+
+
+== Descrizione
+
+Questo messaggio viene visualizzato quando un utente viene specificato in SCVMM per connettersi al provider SMI-S, ma non fa parte dell'archivio di trust SMIS.
+
+Per abilitare la comunicazione tra SCVMM e il provider SMI-S, è necessario aggiungere un utente CIM valido (utente amministratore locale o utente di dominio del gruppo amministratori locali) all'archivio di trust SMIS utilizzando `cimuser` comando.
+
+
+
+== Azione correttiva
+
+Aggiungere l'utente Amministratore locale (sul computer SMI-S Provider) al database del server CIM utilizzando `cimuser` comando: `cimuser -a -u _admin user_ -w _password_`. È quindi necessario utilizzare tale utente amministrativo quando si aggiunge NetApp SMI-S Provider a SCVMM.
+
+Se il controller di dominio impiega troppo tempo per autenticare l'utente di dominio, è necessario utilizzare l'utente Amministratore locale sul computer del provider SMI-S.
+
+Se l'errore persiste, è possibile disattivare l'autenticazione nel provider SMI-S.

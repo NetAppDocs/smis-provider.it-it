@@ -1,0 +1,14 @@
+---
+permalink: concept-specify-slp-configuration-options.html 
+sidebar: sidebar 
+keywords: editing, slp.conf, configuration, file, manage, service location protocol daemon, service 
+summary: 'È possibile modificare il file di configurazione slp.conf per gestire il servizio SLPD (Service Location Protocol daemon).' 
+---
+= Specificare le opzioni di configurazione SLP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile modificare `slp.conf` File di configurazione per gestire il servizio SLPD (Service Location Protocol daemon).

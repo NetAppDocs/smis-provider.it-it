@@ -1,0 +1,50 @@
+---
+permalink: reference-hardware-requirements.html 
+sidebar: sidebar 
+keywords: smi-s provider, smi-s agent 
+summary: 'Prima di installare NetApp SMI-S Provider, è necessario verificare che l"host Windows soddisfi i requisiti hardware minimi.' 
+---
+= Requisiti hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Prima di installare NetApp SMI-S Provider, è necessario verificare che l'host Windows soddisfi i requisiti hardware minimi.
+
+[cols="2*"]
+|===
+| Hardware | Requisiti 
+
+
+ a| 
+Memoria
+ a| 
+* 4 GB di RAM (minimo)
+* 8 GB di RAM (consigliato)
+
+
+
+
+ a| 
+Spazio su disco
+ a| 
+* 1 GB (minimo)
+* 4 GB (consigliato)
+
+
+L'abilitazione della registrazione e del tracciamento richiede spazio su disco aggiuntivo fino a 1 GB, a seconda delle impostazioni di rotazione del file di registrazione e di traccia.
+
+Per l'installazione è necessario disporre di 100 MB di spazio su disco temporaneo.
+
+
+
+ a| 
+CPU
+ a| 
+* Dual-core da 2.0 GHz (minimo)
+* Quad-core da 2.0 GHz (consigliato)
+
+
+|===

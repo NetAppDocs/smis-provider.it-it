@@ -1,0 +1,55 @@
+---
+permalink: reference-supported-operating-systems.html 
+sidebar: sidebar 
+keywords: installing, smi-s provider, verify, windows, host, operating systems 
+summary: 'Prima di installare il provider SMI-S, verificare che l"host Windows stia eseguendo un sistema operativo supportato.' 
+---
+= Versioni dei sistemi operativi supportate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+Prima di installare il provider SMI-S, verificare che l'host Windows stia eseguendo un sistema operativo supportato.
+
+[cols="3*"]
+|===
+| Sistema operativo | Versioni supportate | Software client richiesto 
+
+
+ a| 
+Windows
+ a| 
+* Microsoft Windows Server 2016
+* Microsoft Windows Server 2019
+
+ a| 
+Le librerie runtime di Microsoft Visual C{pp} 2010 vengono installate automaticamente durante l'installazione del provider SMI-S. Per evitare potenziali problemi relativi alle librerie runtime, è necessario installare Microsoft Visual C{pp} 2010 Redistributable Package (x86). dal seguente percorso: http://www.microsoft.com[]
+
+|===
+
+
+== Requisito SCVMM 2016 UR 2.1
+
+System Center Virtual Machine Manager (SCVMM) 2016 Update Rollup (UR) 2.1 è necessario per gestire il file server NetApp con NetApp SMI-S Provider 5.2.4 e versioni successive.
+
+Senza questo UR, SCVMM 2016 visualizza il valore di `Total Capacity` e. `Available Capacity` opzioni come `*0 GB*` Per le condivisioni di file esistenti in NetApp file Server.
+
+Per eseguire SMI-S Provider, il computer host del provider deve soddisfare le seguenti specifiche:
+
+* Il computer host del provider non può essere utilizzato per ospitare un nodo Hyper-V.
+* SCVMM non deve essere in esecuzione sul computer host del provider.
+* Il computer host del provider non deve eseguire altri programmi che richiedono molta memoria.
+* Il computer host del provider non deve eseguire provider SMI-S di altri vendor.
+
+
+Sono supportati i seguenti hypervisor:
+
+* Microsoft Windows Server 2016 Hyper-V.
+* VMware ESX 5.0
+* VMware ESX 5.1
+* VMware ESX 5.5
+* VMware ESX 6.0
+

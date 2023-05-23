@@ -1,0 +1,43 @@
+---
+permalink: reference-smis-initiators.html 
+sidebar: sidebar 
+keywords: smis initiators, display, fibre channel, iscsi, storage systems 
+summary: Il comando smi Initiators visualizza le informazioni sulle porte Fibre Channel e iSCSI per i sistemi storage. 
+---
+= iniziatori smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il `smis initiators` Il comando visualizza le informazioni sulle porte Fibre Channel e iSCSI per i sistemi storage.
+
+.Sintassi
+iniziatori smi
+
+`[-t {*http* | *https*}]`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Un utente con un nome utente e una password validi
+
+.Parametri
+* `*[-t {http | https}]*`
++
+Protocollo da utilizzare: HTTPS (impostazione predefinita) o HTTP
+
+
+
+.Esempio
+Il `smis initiators` comando e relativo output abbreviato:
+
+[listing]
+----
+smis initiators
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:sf-tpc1"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:21:00:00:e0:8b:86:f2:89"
+ONTAP_StorageHardwareID.InstanceID="ONTAP:0084259609:iqn.1991-05.com.microsoft:went2k3x32-01"
+----

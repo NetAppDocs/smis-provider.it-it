@@ -1,0 +1,20 @@
+---
+permalink: concept-clone-technology-used-in-smi-s-agent-4-0.html 
+sidebar: sidebar 
+keywords: flexclone, license, smi-s provider, create, lun clones 
+summary: Per creare cloni LUN, è necessario disporre di una licenza FlexClone per il provider SMI-S. 
+---
+= Tecnologia di clonazione utilizzata nel provider SMI-S.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per creare cloni LUN, è necessario disporre di una licenza FlexClone per il provider SMI-S.
+
+Il provider SMI-S crea cloni LUN sul sistema storage utilizzando solo la tecnologia FlexClone. Se non si dispone di una licenza FlexClone, il provider SMI-S non genera cloni utilizzando la tecnologia dei cloni LUN e genera il seguente messaggio di errore:
+
+`FlexClone license is not enabled on the storage system.`
+
+Se si dispone di cloni LUN creati utilizzando la tecnologia di clonazione LUN e la versione di Data ONTAP viene aggiornata alla versione 7.3.1 o successiva, non è possibile utilizzare il provider SMI-S per suddividere tali cloni. Devono essere gestiti dall'amministratore del sistema di storage.

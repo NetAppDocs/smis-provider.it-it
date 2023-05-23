@@ -1,0 +1,72 @@
+---
+permalink: reference-cimconfig-command-options.html 
+sidebar: sidebar 
+keywords: cimconfig, command, cimom configuration, settings, variable, mis cimserver restart command 
+summary: È possibile utilizzare il comando cimconfig per gestire le impostazioni di configurazione di CIMOM. Dopo aver immesso il comando cimconfig o aver creato una variabile di ambiente per il valore di configurazione del provider SMI-S di NetApp, è necessario riavviare il server CIM utilizzando il comando di riavvio del cimserver smi. 
+---
+= cimconfig
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile utilizzare `cimconfig` Comando per configurare le impostazioni CIMOM, ad esempio l'attivazione e la disattivazione di HTTP e HTTPS e la modifica dei numeri di porta HTTP e HTTPS. Dopo aver immesso il `cimconfig` O creando una variabile di ambiente per il valore di configurazione NetApp SMI-S Provider, è necessario riavviare il server CIM utilizzando `smis cimserver restart` comando.
+
+.Sintassi
+`cimconfig _options_`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Amministratore (Windows)
+
+.Opzioni
+* *-c*
++
+Specifica che l'impostazione di configurazione si applica alla configurazione CIMOM corrente.
+
+* *-d*
++
+Specifica che l'impostazione di configurazione si applica alla configurazione predefinita di CIMOM.
+
+* *-g*
++
+Ottiene il valore di una proprietà di configurazione specificata.
+
+* *-h, --help*
++
+Visualizza la guida di `cimconfig` comando.
+
+* *-l*
++
+Elenca tutte le proprietà di configurazione di CIMOM.
+
+* *-p*
++
+Specifica che l'impostazione di configurazione viene applicata al successivo avvio del server CIM.
+
+* *-s*
++
+Imposta il valore della proprietà di configurazione specificata.
+
+* *-u*
++
+Ripristina il valore predefinito della proprietà di configurazione.
+
+* *--versione*
++
+Visualizza la versione del server CIM.
+
+
+
+.Esempio
+Modificare la dimensione massima del file di log in 15000 KB:
+
+[listing]
+----
+cimconfig -s maxLogFileSizeKBytes=15000
+Current value for the property maxLogFileSizeKBytes is set to "15000" in CIMServer.
+smis cimserver restart
+----

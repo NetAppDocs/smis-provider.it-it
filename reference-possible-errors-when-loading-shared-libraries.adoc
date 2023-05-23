@@ -1,0 +1,36 @@
+---
+permalink: reference-possible-errors-when-loading-shared-libraries.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemi riscontrati con NetApp SMI-S Provider. 
+---
+= Possibili errori durante il caricamento delle librerie condivise
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+* *Messaggi*
++
+`Error while loading shared libraries: libssl.so 1.0.0: cannot open shared object file: No such file or directory.`
+
++
+Il `smis cimserver` status indica che il cimserver funziona correttamente, ma tutti gli altri `/usr/netapp/smis/pegasus/bin/cim` i comandi mostrano diversi messaggi di errore.
+
++
+Ad esempio, è possibile che il messaggio venga ricevuto `cimserver not running` durante l'esecuzione di `cimserver`oppure potrebbe essere visualizzato il messaggio `/usr/netapp/smis/pegasus/bin/ cimcli: symbol lookup error: /usr/netapp/smis/pegasus/bin/cimcli: undefined symbol: _ZN7Pegasus16StringConversion21decimalStringToUint64EPKcRy` quando si esegue cimcli. Questi esempi non sono all-inclusive.
+
+* *Descrizione*
++
+Questo messaggio (e messaggi simili) viene visualizzato quando `LD_LIBRARY_PATH` ambiente non impostato sulla directory di installazione.
+
+* *Azione correttiva*
++
+Immettere uno dei seguenti comandi per impostare `LD_LIBRARY_PATH` variabile di ambiente nella directory di installazione:
+
+
+
+`export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/netapp/smis/pegasus/lib`
+
+`setenv LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/netapp/smis/pegasus/lib`

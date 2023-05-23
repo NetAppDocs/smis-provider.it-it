@@ -1,0 +1,38 @@
+---
+permalink: task-add-cim-server-users.html 
+sidebar: sidebar 
+keywords: validate, storage systems, cim user, cim server 
+summary: Prima di poter convalidare il sistema storage, è necessario aggiungere un utente CIM autorizzato a utilizzare il server CIM. 
+---
+= Aggiungere un utente del server CIM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Prima di poter convalidare il sistema storage, è necessario aggiungere un utente CIM autorizzato a utilizzare il server CIM.
+
+.Prima di iniziare
+* È necessario aver già effettuato l'accesso come amministratore.
+* È necessario aver già effettuato l'accesso al provider SMI-S.
+
+
+.Fasi
+. Creare un account utente locale.
+. Aggiungere l'utente al gruppo Administrators.
++
+Per ulteriori informazioni, consulta la _documentazione del sistema_.
+
+. Aggiunta di un utente del server CIM:
++
+`*cimuser -a -u _user_name_*`
+
++
+Ad esempio, per aggiungere un utente del server CIM denominato "`chris`":
+
++
+`*cimuser -a -u chris*`
+
+. Quando richiesto, inserire e immettere nuovamente la password.
+

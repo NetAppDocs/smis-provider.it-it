@@ -1,0 +1,78 @@
+---
+permalink: reference-smis-class.html 
+sidebar: sidebar 
+keywords: smis class, command, lists, information, 
+summary: Il comando della classe smi elenca le informazioni relative a una classe specificata o a tutte le classi. 
+---
+= classe smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il `smis class` command elenca le informazioni relative a una classe specificata o a tutte le classi.
+
+.Sintassi
+`smis class`
+
+`_name_space_ {*niall*  | {*ei* | *ni* | *gi* | *gc*} _class_name_}} [-t {*http* | *https*}]`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Un utente con un nome utente e una password validi
+
+.Parametri
+* `*_name_space_*`
++
+Spazio dei nomi supportato da CIMOM
+
+* *niall*
++
+Enumerare tutti i nomi delle istanze
+
+* *ei*
++
+Enumerare le istanze di una classe
+
+* *ni*
++
+Enumerare i nomi delle istanze per una classe
+
+* *gi*
++
+Ottenere istanze per una classe
+
+* *gc*
++
+Ottieni classe per il nome di una classe
+
+* `*_class_name_*`
++
+Nome della classe per la quale si desidera ottenere informazioni
+
+* `*[-t {http | https}]*`
++
+Protocollo da utilizzare: HTTPS (impostazione predefinita) o HTTP
+
+
+
+.Esempio
+Il `smis class` comando e relativo output abbreviato:
+
+[listing]
+----
+smis class root/ontap gi CIM_StorageVolume
+1:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJdC-mN5",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+2:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcmzpHt",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+3:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJc30t26",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+4:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgbiT",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+5:
+ONTAP_StorageVolume.CreationClassName="ONTAP_StorageVolume",DeviceID="P3LfGJcSgrA9",SystemCreationClassName="ONTAP_StorageSystem",SystemName="ONTAP:0135027815"
+----

@@ -1,0 +1,30 @@
+---
+permalink: reference-non-default-firewalls-must-have-ports-manually-added-as-exceptions.html 
+sidebar: sidebar 
+keywords: troubleshooting, issue, encounter 
+summary: Problemi riscontrati con NetApp SMI-S Provider. 
+---
+= I firewall non predefiniti devono avere porte aggiunte manualmente come eccezioni
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+* *Problema*
++
+Se si utilizza un firewall diverso da quello predefinito di Windows, potrebbero verificarsi i seguenti problemi:
+
++
+** Il provider SMI-S non è in grado di comunicare con un client SMI-S rimosso.
+** Il client SMI-S non è in grado di ricevere indicazioni dal provider SMI-S.
+
+
+* *Causa*
++
+Questo problema si verifica quando si utilizza un firewall diverso da quello predefinito di Windows senza prima aggiungere manualmente le porte necessarie come eccezioni.
+
+* *Azione correttiva*
++
+Aggiungere le porte 427, 5988 e 5989 come eccezioni al firewall.
+
+

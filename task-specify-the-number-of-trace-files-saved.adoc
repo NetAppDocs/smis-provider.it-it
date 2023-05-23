@@ -1,0 +1,34 @@
+---
+permalink: task-specify-the-number-of-trace-files-saved.html 
+sidebar: sidebar 
+keywords: trace, enable, seven trace file, pegasus trace file num, system, space 
+summary: Se la funzione di traccia è attivata, per impostazione predefinita vengono salvati sette file di traccia. Se sono necessari più file di traccia salvati, è possibile aumentare il numero massimo di file di traccia salvati impostando la variabile di ambiente PEGASUS_TRACE_FILE_NUM. Se si aumenta il numero massimo di file di traccia salvati, assicurarsi che il sistema disponga di spazio sufficiente sul disco rigido per ospitare i file di traccia. 
+---
+= Specificare il numero di file di traccia salvati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se la funzione di traccia è attivata, per impostazione predefinita vengono salvati sette file di traccia. Se sono necessari più file di traccia salvati, è possibile aumentare il numero massimo di file di traccia salvati impostando la variabile di ambiente `PEGASUS_TRACE_FILE_NUM`. Se si aumenta il numero massimo di file di traccia salvati, assicurarsi che il sistema disponga di spazio sufficiente sul disco rigido per ospitare i file di traccia.
+
+.Prima di iniziare
+* È necessario disporre delle credenziali di accesso come amministratore.
+* È necessario aver già effettuato l'accesso al sistema host come amministratore.
+
+
+.A proposito di questa attività
+Se la funzione di traccia è attivata, le informazioni di traccia vengono scritte in `cimserver.trc` file. I file di traccia vengono ruotati. Quando `cimserver.trc` raggiunge la dimensione massima del file di traccia, il suo contenuto viene spostato in `cimserver.trc._n_` file. Per impostazione predefinita, `n` è un valore compreso tra 0 e 5. Se sono necessari più file di traccia salvati, è possibile aumentare il valore di `_n_`.
+
+.Fasi
+. Accedi al provider SMI-S di NetApp.
+. Creare una variabile di ambiente di sistema o utente denominata `PEGASUS_TRACE_FILE_NUM` con il nuovo numero di file di traccia salvati.
++
+La _documentazione di Windows_ contiene ulteriori informazioni sulla creazione di variabili di ambiente.
+
+. Riavviare il server CIM:
++
+`*smis cimserver restart*`
+
+

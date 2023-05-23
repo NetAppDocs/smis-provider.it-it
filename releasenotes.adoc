@@ -1,0 +1,13 @@
+---
+permalink: releasenotes.html 
+sidebar: sidebar 
+keywords: netapp smi-s provider, relnotes, limitations, fixes, known issues 
+summary: Fornisce informazioni su funzionalità, limitazioni e problemi noti del software NetApp SMI-S Provider 5.2.6. 
+---
+= NetApp SMI-S Provider - Note di release
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+Il https://library.netapp.com/ecm/ecm_download_file/ECMLP2862930["NetApp SMI-S Provider - Note di release"^] descrivere nuove funzionalità, note sull'aggiornamento, problemi risolti, limitazioni note e problemi noti.

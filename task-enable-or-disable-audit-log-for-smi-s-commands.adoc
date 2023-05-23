@@ -1,0 +1,56 @@
+---
+permalink: task-enable-or-disable-audit-log-for-smi-s-commands.html 
+sidebar: sidebar 
+keywords: incoming smi-s command, record, log files, auditor, wbem client 
+summary: 'Tutti i comandi SMI-S in entrata vengono registrati in file di log di audit, che consentono ai revisori di tenere traccia delle attività delle operazioni del client WBEM e dell"utilizzo da parte del provider. È possibile attivare o disattivare la registrazione di questi comandi in entrata impostando una proprietà di configurazione dinamica.' 
+---
+= Attiva o disattiva il registro di controllo per i comandi SMI-S.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Tutti i comandi SMI-S in entrata vengono registrati in file di log di audit, che consentono ai revisori di tenere traccia delle attività delle operazioni del client WBEM e dell'utilizzo da parte del provider. È possibile attivare o disattivare la registrazione di questi comandi in entrata impostando una proprietà di configurazione dinamica.
+
+.Prima di iniziare
+* È necessario disporre delle credenziali di accesso come amministratore.
+* È necessario aver già effettuato l'accesso al sistema host come amministratore.
+
+
+.A proposito di questa attività
+I dati del registro di controllo possono fornire un record di accesso, attività e modifiche di configurazione per un server CIM. Il contenuto del file di audit include il comando emesso, il comando da cui è stato emesso e l'ora di emissione del comando.
+
+La proprietà di configurazione dinamica `enableAuditLog` attiva o disattiva la registrazione dell'audit in fase di esecuzione. Per impostazione predefinita, enableAuditLog è impostato su true.
+
+La pratica comune consiste nel lasciare attivata la registrazione dell'audit.
+
+Il file di log dell'audit (`cimserver_auditlog`) è memorizzato nella directory di log di pegasus (`C:\Program Files (x86)\Netapp\smis\pegasus\logs`).
+
+La dimensione massima del file di log di audit è di 10 MB. Una volta raggiunto il limite massimo, il file viene rinominato `cimserver_auditlog.0`e un nuovo `cimserver auditlog` il file viene creato per raccogliere le informazioni di registrazione dell'audit più recenti.
+
+NetApp SMI-S Provider gestisce i sei file di log di audit più recenti: `cimserver_auditlog.0` attraverso `cimserver_auditlog.5`.
+
+.Fasi
+. Accedi al provider SMI-S di NetApp.
+. Impostare la registrazione dell'audit dei comandi SMI-S in fase di esecuzione:
++
+[cols="2*"]
+|===
+| Azione | Comando 
+
+
+ a| 
+*Attiva la registrazione dell'audit SMI-S*
+ a| 
+`*cimconfig -s enableAuditLog=true*`
+
+
+
+ a| 
+*Disattiva la registrazione dell'audit SMI-S*
+ a| 
+`*cimconfig -s enableAuditLog=false*`
+
+|===
+

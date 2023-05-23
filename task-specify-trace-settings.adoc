@@ -1,0 +1,61 @@
+---
+permalink: task-specify-trace-settings.html 
+sidebar: sidebar 
+keywords: trace, enable, important, gathering, information, troubleshooting, performance, impact 
+summary: 'L"attivazione del tracciamento è importante per la raccolta di informazioni per la risoluzione dei problemi. Tuttavia, l"abilitazione del tracciamento può influire sulle performance, quindi considerare attentamente cosa deve essere tracciato e quanto tempo è necessario abilitare il tracciamento.' 
+---
+= Specifica delle impostazioni di traccia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+L'attivazione del tracciamento è importante per la raccolta di informazioni per la risoluzione dei problemi. Tuttavia, l'abilitazione del tracciamento può influire sulle performance, quindi considerare attentamente cosa deve essere tracciato e quanto tempo è necessario abilitare il tracciamento.
+
+.Prima di iniziare
+* È necessario disporre delle credenziali di accesso come amministratore.
+* È necessario aver già effettuato l'accesso al sistema host come amministratore.
+
+
+.Fasi
+. Accedi al provider SMI-S di NetApp.
+. Specificare le varie impostazioni di traccia in base alle esigenze:
++
+[cols="2*"]
+|===
+| Azione | Comando 
+
+
+ a| 
+Specificare i componenti da tracciare
+ a| 
+`*cimconfig -s traceComponents=_components_ -p*`
+
+
+
+ a| 
+Specificare la funzione di traccia
+ a| 
+`*cimconfig -s traceFacility=_facility_ -p*`
+
+
+
+ a| 
+Specificare la posizione del file di traccia
+ a| 
+`*cimconfig -s traceFilePath=_path_name_ -p*`
+
+
+
+ a| 
+Specificare il livello di traccia
+ a| 
+`*cimconfig -s traceLevel=_level_ -p*`
+
+|===
+. Riavviare il server CIM:
++
+`*smis cimserver restart*`
+
+

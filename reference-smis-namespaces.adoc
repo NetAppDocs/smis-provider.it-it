@@ -1,0 +1,45 @@
+---
+permalink: reference-smis-namespaces.html 
+sidebar: sidebar 
+keywords: smis namespace, command, list, registered, namespace, cimom 
+summary: Il comando smi namespace elenca gli spazi dei nomi registrati per CIMOM. 
+---
+= spazi dei nomi smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il `smis namespaces` Command elenca gli spazi dei nomi registrati per CIMOM.
+
+.Sintassi
+spazi dei nomi smi
+
+`[-t {*http* | *https*}]`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+* Finestre: `C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+
+.Livello di privilegio
+Un utente con un nome utente e una password validi
+
+.Parametri
+* `*[-t {http | https}]*`
++
+Protocollo da utilizzare: HTTPS (impostazione predefinita) o HTTP
+
+
+
+.Esempio
+Il `smis namespaces` comando e relativo output abbreviato:
+
+[listing]
+----
+smis namespaces
+interop
+root/ontap
+----

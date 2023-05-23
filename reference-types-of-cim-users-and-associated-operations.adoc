@@ -1,0 +1,81 @@
+---
+permalink: reference-types-of-cim-users-and-associated-operations.html 
+sidebar: sidebar 
+keywords: smi-s provider, various types, control, access 
+summary: 'Quando si utilizza SMI-S Provider, è possibile assegnare diversi tipi di utenti a un utente per controllarne l"accesso al server CIM.' 
+---
+= Tipi di utenti CIM e operazioni associate
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando si utilizza SMI-S Provider, è possibile assegnare diversi tipi di utenti a un utente per controllarne l'accesso al server CIM.
+
+A partire da questa release, l'utente di dominio può modificare il database utente del provider SMI-S e altre impostazioni di configurazione come utente di dominio del gruppo Local Administrators.
+
+La tabella seguente elenca gli utenti supportati del server CIM e le operazioni che ciascun tipo può eseguire.
+
+[cols="2*"]
+|===
+| Tipo di utente | Operazioni 
+
+
+ a| 
+Amministratore di dominio del gruppo Administrators
+ a| 
+Configurazione del provider SMI-S e gestione degli utenti con `cimconfig` e. `cimuser` comandi. Ad esempio:
+
+* Aggiungere o rimuovere un utente da o verso l'archivio trust del provider SMI-S.
+* Attivare, disattivare o modificare la configurazione del livello di log e del tracciamento.
+* Attivare o disattivare il motore di autenticazione nel provider SMI-S.
+
+
+Gestione e verifica dello storage con `smis` e. `cimcli` comandi. Ad esempio:
+
+* Aggiungere o rimuovere storage controller o SVM da o verso un repository di SMI-S Provider, un database o una cache.
+* Aggiorna i controller storage o le SVM nella cache del provider SMI-S.
+* Verificare la gestione dello storage controller o SVM.
+
+
+Operazioni di rilevamento SCVMM mediante la GUI SCVMM.
+
+
+
+ a| 
+Utente di dominio del gruppo Local Administrators
+
+
+
+ a| 
+Utente locale del gruppo Local Administrators
+
+
+
+ a| 
+Utente Domain Administrator integrato
+
+
+
+ a| 
+Utente amministratore locale integrato
+
+
+
+ a| 
+Utente di dominio del gruppo Users
+ a| 
+Operazioni di rilevamento SCVMM mediante la GUI SCVMM.
+
+
+
+ a| 
+Utente locale del gruppo Users
+
+|===
+[NOTE]
+====
+Se si dispone di un provider SMI-S su un host Windows e si modifica un nome utente "`Administrator`", è necessario disconnettersi dal sistema e quindi effettuare nuovamente l'accesso. Il servizio Windows SMI-S eredita l'autenticazione durante questo periodo di tempo; di conseguenza, qualsiasi modifica alle credenziali non viene riconosciuta fino a quando l'amministratore non si disconnette e quindi si connette nuovamente.
+
+====

@@ -1,0 +1,18 @@
+---
+permalink: concept-how-smi-s-provider-interacts-with-a-host.html 
+sidebar: sidebar 
+keywords: client, application, discover, cimom server, shared objects, device specific api 
+summary: 'Quando un"applicazione client su un host rileva il server CIMOM utilizzando SLP (CIM-XML Encoding over HTTP), il client interroga CIMOM per gli oggetti condivisi (oggetti modellati nel linguaggio CIM). CIMOM carica gli oggetti condivisi e interroga il sistema di storage utilizzando API specifiche del dispositivo per le informazioni richieste.' 
+---
+= In che modo NetApp SMI-S Provider interagisce con un host
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando un'applicazione client su un host rileva il server CIMOM utilizzando SLP (CIM-XML Encoding over HTTP), il client interroga CIMOM per gli oggetti condivisi (oggetti modellati nel linguaggio CIM). CIMOM carica gli oggetti condivisi e interroga il sistema di storage utilizzando API specifiche del dispositivo per le informazioni richieste.
+
+La seguente illustrazione mostra come il provider SMI-S di NetApp interagisce con un client di gestione WBEM quando il provider SMI-S riceve una query o un comando.
+
+image::../media/smi_s_agent_and_host_interaction.gif[interazione agente e host di smi]

@@ -1,0 +1,32 @@
+---
+permalink: concept-smi-s-provider-commands-overview.html 
+sidebar: sidebar 
+keywords: smis, commands, manage, storage, system, display, cim object manager 
+summary: È possibile utilizzare i comandi smi per gestire i sistemi di storage e visualizzare informazioni sul gestore di oggetti CIM. 
+---
+= Panoramica
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile utilizzare `smis` Comandi per gestire i sistemi storage e visualizzare informazioni sul gestore di oggetti CIM.
+
+La guida è disponibile per `smis` utilizzando il comando `-help` opzione.
+
+* *smi `-help`*
++
+Visualizza un riepilogo dei comandi.
+
+* *smi `-help` esempi*
++
+Visualizza esempi di utilizzo.
+
+* *smi `-help _subcommand_`*
++
+Visualizza la guida per il sottocomando specificato.
+
+
+
+Il valore di timeout predefinito per lo strumento smi è 180 secondi.

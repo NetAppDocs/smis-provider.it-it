@@ -1,0 +1,45 @@
+---
+permalink: reference-smis-refresh.html 
+sidebar: sidebar 
+keywords: smi-s provider, automatic, information, storage systems 
+summary: 'Per impostazione predefinita, il provider SMI-S ottiene automaticamente le informazioni dai sistemi storage ogni 60 minuti (3600 secondi). È possibile utilizzare il comando di refresh smi per aggiornare manualmente un particolare sistema storage.' 
+---
+= aggiornamento delle smi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per impostazione predefinita, il provider SMI-S ottiene automaticamente le informazioni dai sistemi storage ogni 60 minuti (3600 secondi). È possibile utilizzare `smis refresh` comando per aggiornare manualmente un particolare sistema storage.
+
+.Sintassi
+`smis refresh _storage_system_ip_`
+
+`[-t {*http* | *https*}]`
+
+.Posizione
+`C:\Program Files (x86)\NetApp\smis\pegasus\bin`
+
+.Livello di privilegio
+Un utente con un nome utente e una password validi
+
+.Parametri
+* `*_storage_system_ip_*`
++
+Aggiorna un sistema storage specifico.
+
+* `*[-t {http | https}]*`
++
+Protocollo da utilizzare: HTTPS (impostazione predefinita) o HTTP
+
+
+
+.Esempio
+Il `smis refresh` comando e relativo output:
+
+[listing]
+----
+smis refresh 10.32.1.4
+Return Value= 0
+----

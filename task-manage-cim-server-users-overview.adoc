@@ -1,0 +1,70 @@
+---
+permalink: task-manage-cim-server-users-overview.html 
+sidebar: sidebar 
+keywords: smi-s provider, add, remove, remove, cim users, authorized, cim server, cim user, password, modify 
+summary: È possibile utilizzare il provider SMI-S per aggiungere e rimuovere utenti CIM autorizzati a utilizzare il server CIM. È inoltre possibile elencare tutti gli utenti CIM correnti e modificarne le password. 
+---
+= Panoramica
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile utilizzare il provider SMI-S per aggiungere e rimuovere utenti CIM autorizzati a utilizzare il server CIM. È inoltre possibile elencare tutti gli utenti CIM correnti e modificarne le password.
+
+.Prima di iniziare
+* È necessario disporre delle credenziali di accesso come amministratore.
+* È necessario aver già effettuato l'accesso al sistema host come amministratore.
+
+
+.Fasi
+. Accedi al provider SMI-S di NetApp.
+. Creare un account utente locale.
+. Aggiungere l'utente al gruppo Administrators.
++
+Per ulteriori informazioni, consulta la _documentazione del sistema_.
+
+. Eseguire una delle seguenti operazioni:
++
+[cols="3*"]
+|===
+| Azione | Comando | Ulteriori informazioni 
+
+
+ a| 
+Aggiungere un utente del server CIM
+ a| 
+`*cimuser -a -u _user_name_*`
+ a| 
+Dopo aver immesso il comando, immettere e immettere nuovamente la password quando richiesto.
+
+
+
+ a| 
+Elencare gli utenti correnti autorizzati a utilizzare il server CIM
+ a| 
+`*cimuser -l*`
+ a| 
+NA
+
+
+
+ a| 
+Modificare la password per un utente del server CIM
+ a| 
+`*cimuser -m -u _user_name_*`
+ a| 
+Dopo aver immesso il comando, immettere e immettere nuovamente la nuova e vecchia password quando richiesto.
+
+
+
+ a| 
+Rimuovere un utente del server CIM non autorizzato a utilizzare il server CIM
+ a| 
+`*cimuser -r -u _user_name_*`
+ a| 
+NA
+
+|===
+
