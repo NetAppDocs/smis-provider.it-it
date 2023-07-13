@@ -898,4 +898,17 @@
   <block id="36368c8058877b609a51ba50239f980e" category="sidebar">Comandi del provider SMI-S.</block>
   <block id="f367b7dd9d33500bed829af817d25418" category="sidebar">Comandi SLP</block>
   <block id="ce7b7453e7d182fcfcfa37f70a3827c2" category="sidebar">Risolvere i problemi del provider SMI-S.</block>
+  <block id="89eb3b2b1c7ee55693e8de7ba82e5ba4" category="inline-link-macro"><block ref="89eb3b2b1c7ee55693e8de7ba82e5ba4" category="inline-link-rx"></block></block>
+  <block id="4ddf9c5810fe4ae35f51468822c93f0c" category="list-text">Scaricare il<block ref="4bd6c476c5b1e91f1c5d5e856487a8d8" prefix=" " category="inline-code"></block> file dalla seguente posizione: <block ref="00e6c9d6bfee51757d5adaf602913f5e" category="inline-link-macro-rx"></block></block>
+  <block id="3ff2de46a7ece27a30e661ad1988c771" category="list-text">Spostare il<block ref="4bd6c476c5b1e91f1c5d5e856487a8d8" prefix=" " category="inline-code"></block> file nella directory bin:</block>
+  <block id="7ae46c19e55ff9fda2e83b7aa2f37cfd" category="paragraph"><block ref="e79d8293df85193c0ee44bf19eeef913" prefix="" category="inline-code"></block></block>
+  <block id="6d6d95d710fafdcc96679d6a097b8aa2" category="list-text">Impostare<block ref="301205747f130a819164fb49d391c084" prefix=" " category="inline-code"></block> variabile ambientale in base alla posizione di<block ref="4bd6c476c5b1e91f1c5d5e856487a8d8" prefix=" " category="inline-code"></block> file:</block>
+  <block id="9ab83c2678d2d7ec7c82f6059b6c243f" category="paragraph"><block ref="239f106b6730f6e4049528822b40b2f2" prefix="" category="inline-code"></block></block>
+  <block id="a70427dd387d91471ce1de93827b4166" category="paragraph">In questo modo si imposta la variabile di ambiente solo per la durata della sessione corrente del prompt dei comandi. Se si desidera impostare in modo permanente la variabile di ambiente, è possibile utilizzare una delle seguenti opzioni:</block>
+  <block id="0f42925200380f73e8af02ef03ac37f7" category="list-text">Accedere a *Proprietà &gt; variabili ambientali* e aggiornare la variabile in *sistema*.</block>
+  <block id="1f3b7d1decea3abd87b7cca70fb2504a" category="list-text">Utilizzare il prompt dei comandi per impostare in modo permanente la variabile:</block>
+  <block id="00dc48c3880b7c2bd0337d8b3bef7a25" category="paragraph"><block ref="55fe4eb88b475075b1f715a663e5d475" prefix="" category="inline-code"></block>.</block>
+  <block id="5940103c9703f3197b9db75e060cdcbc" category="paragraph">La variabile viene impostata quando si apre una nuova sessione del prompt dei comandi.</block>
+  <block id="5d46f0ef9c5d5b1b112b901048bd8b85" category="list-text">Passare a.<block ref="0a36b8ad7af6adf0c1d5daa0a3240994" prefix=" " category="inline-code"></block> directory:</block>
+  <block id="82e1f4ca9abf9652748d9a698fc051c7" category="paragraph"><block ref="a9bf600e3f42bfde86bd479b9fcaec63" prefix="" category="inline-code"></block></block>
 </blocks>

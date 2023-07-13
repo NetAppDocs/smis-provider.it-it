@@ -19,6 +19,33 @@ Per impostazione predefinita, l'autenticazione SSL è attivata per il server CIM
 
 
 .Fasi
+. Scaricare il `openssl.cnf` file dalla seguente posizione: link:http://web.mit.edu/crypto/openssl.cnf["http://web.mit.edu/crypto/openssl.cnf"^]
+. Spostare il `openssl.cnf` file nella directory bin:
++
+`*%PEGASUS_HOME%\bin\openssl.cnf*`
+
+. Impostare `OPENSSL_CONF` variabile ambientale in base alla posizione di `openssl.cnf` file:
++
+`*C:\ >set OPENSSL_CONF=%PEGASUS_HOME%\bin\openssl.cnf*`
+
++
+In questo modo si imposta la variabile di ambiente solo per la durata della sessione corrente del prompt dei comandi. Se si desidera impostare in modo permanente la variabile di ambiente, è possibile utilizzare una delle seguenti opzioni:
+
++
+** Accedere a *Proprietà > variabili ambientali* e aggiornare la variabile in *sistema*.
+** Utilizzare il prompt dei comandi per impostare in modo permanente la variabile:
++
+`*setx OPENSSL_CONF “%PEGASUS_HOME%\bin\openssl.cnf*`.
+
++
+La variabile viene impostata quando si apre una nuova sessione del prompt dei comandi.
+
+
+
+. Passare a. `%PEGASUS_HOME%\bin` directory:
++
+`*C:\cd %pegasus_home%\bin*`
+
 . Generare una chiave privata:
 +
 `*openssl genrsa -out cimom.key 2048*`
