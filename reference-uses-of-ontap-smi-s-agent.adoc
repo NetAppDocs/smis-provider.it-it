@@ -1,5 +1,5 @@
 ---
-permalink: reference-uses-of-data-ontap-smi-s-agent.html 
+permalink: reference-uses-of-ontap-smi-s-agent.html 
 sidebar: sidebar 
 keywords: netapp smi-s provider, manage, monitor, storage systems, lun 
 summary: NetApp SMI-S Provider semplifica la gestione e il monitoraggio dei sistemi storage e la gestione di LUN e volumi di sistemi storage. 
