@@ -16,7 +16,7 @@ Le dimensioni delle condivisioni SMB 3.0 nuove o esistenti possono scendere a 0 
 
 * *Causa*
 +
-Questo problema si verifica quando la reinizializzazione delle quote richiede molto tempo in Data ONTAP a causa dell'elevato i/o, le dimensioni delle condivisioni SMB 3.0 nuove o esistenti possono scendere a 0 in SCVMM. Per questo motivo, non è possibile eseguire il provisioning di nuove VM sulle condivisioni SMB 3.0 nuove o esistenti.
+Se la reinizializzazione delle quote richiede molto tempo in ONTAP a causa di un elevato i/o, le dimensioni delle condivisioni SMB 3,0 nuove o esistenti possono scendere a 0 in SCVMM. Quando si verifica questo problema, non è possibile eseguire il provisioning delle nuove macchine virtuali sulle condivisioni SMB 3,0 nuove o esistenti.
 
 * *Azione correttiva*
 +

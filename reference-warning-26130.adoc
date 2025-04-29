@@ -28,9 +28,9 @@ Questo errore si verifica quando si assegna la capacità di storage e si concede
 
 . Su ciascun computer host, aggiungere l'indirizzo IP di ciascun sistema di storage all'applicazione iSCSI Initiator.
 . Se necessario, su ciascun sistema storage, per ogni computer host, creare un igroup univoco collegato al nome del nodo iSCSI appropriato dal computer host corrispondente.
-. Per ogni computer host connesso a Data ONTAP, aprire l'applicazione MPIO e aggiungere il seguente ID hardware:
+. Per ogni computer host connesso a ONTAP, aprire l'applicazione MPIO e aggiungere il seguente ID hardware:
 +
-** Per Clustered Data ONTAP, immettere `*NETAPP LUN C-Mode*`.
+** Per ONTAP, immettere `*NETAPP LUN C-Mode*`.
 
 
 . Riavviare i computer host.

@@ -2,7 +2,7 @@
 permalink: concept-overview.html 
 sidebar: sidebar 
 keywords: smis-s provider, enable, manage, storage, systems, lun, volumes, cimom configuration, cim server settings 
-summary: NetApp SMI-S Provider 5.2.5 consente di gestire e monitorare i sistemi storage e di gestire LUN e volumi di sistemi storage, impostazioni di configurazione CIMOM e utenti di server CIM. 
+summary: NetApp SMI-S Provider 5.2.7 consente di gestire e monitorare i sistemi storage e di gestire LUN e volumi di sistemi storage, impostazioni di configurazione CIMOM e utenti di server CIM. 
 ---
 = Panoramica
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: NetApp SMI-S Provider 5.2.5 consente di gestire e monitorare i sistemi 
 
 
 [role="lead"]
-NetApp SMI-S Provider 5.2.5 consente di gestire e monitorare i sistemi storage e di gestire LUN e volumi di sistemi storage, impostazioni di configurazione CIMOM e utenti di server CIM.
+NetApp SMI-S Provider 5.2.7 consente di gestire e monitorare i sistemi storage e di gestire LUN e volumi di sistemi storage, impostazioni di configurazione CIMOM e utenti di server CIM.
 
 Il provider SMI-S di NetApp è un'interfaccia basata su comandi che rileva e gestisce le piattaforme che eseguono il software ONTAP. Il provider SMI-S utilizza i protocolli WBEM (Web-Based Enterprise Management), che consentono di gestire, monitorare e generare report sugli elementi di storage.
 

@@ -16,10 +16,10 @@ summary: Problemi riscontrati con NetApp SMI-S Provider.
 
 * *Descrizione*
 +
-Questo messaggio viene visualizzato quando l'API ONTAPI viene fuori servizio. Il timeout API ONTAPI predefinito è di 60 secondi, che potrebbe essere troppo breve in alcuni scenari.
+Questo messaggio viene visualizzato quando la chiamata API ONTAP scade. Il timeout di chiamata predefinito dell'API ONTAP è di 60 secondi, che in alcuni scenari potrebbe essere troppo breve.
 
 * *Azione correttiva*
 +
-Impostare il timeout dell'API ONTAPI su un valore superiore a 60 secondi impostando la variabile di ambiente `ONTAPI_TIMEOUT_SEC`, Quindi riavviare il provider SMI-S.
+Impostare il timeout della chiamata API ONTAP su un valore superiore a 60 secondi impostando la variabile di ambiente `ONTAPI_TIMEOUT_SEC` , quindi riavviare il provider SMI-S.
 
 

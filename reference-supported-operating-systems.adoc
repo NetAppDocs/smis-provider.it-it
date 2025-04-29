@@ -24,6 +24,8 @@ Windows
  a| 
 * Microsoft Windows Server 2016
 * Microsoft Windows Server 2019
+* Microsoft Windows Server 2022
+* Microsoft Windows Server 2025
 
  a| 
 Le librerie runtime di Microsoft Visual C{pp} 2010 vengono installate automaticamente durante l'installazione del provider SMI-S. Per evitare potenziali problemi relativi alle librerie runtime, è necessario installare Microsoft Visual C{pp} 2010 Redistributable Package (x86). dal seguente percorso: http://www.microsoft.com[]
@@ -31,11 +33,11 @@ Le librerie runtime di Microsoft Visual C{pp} 2010 vengono installate automatica
 |===
 
 
-== Requisito SCVMM 2016 UR 2.1
+== Requisito SCVMM UR 2,1
 
-System Center Virtual Machine Manager (SCVMM) 2016 Update Rollup (UR) 2.1 è necessario per gestire il file server NetApp con NetApp SMI-S Provider 5.2.4 e versioni successive.
+Per gestire il file server NetApp con provider NetApp SMI-S 5.2.7 e versioni successive, è necessario rollup di aggiornamento (UR) 2,1 del System Center Virtual Machine Manager (SCVMM).
 
-Senza questo UR, SCVMM 2016 visualizza il valore di `Total Capacity` e. `Available Capacity` opzioni come `*0 GB*` Per le condivisioni di file esistenti in NetApp file Server.
+Senza questo UR, SCVMM (versione 2016, 2019, 2022 o 2025) visualizza il valore delle `Total Capacity` opzioni e `Available Capacity` come `*0 GB*` per le condivisioni di file esistenti nel file server NetApp.
 
 Per eseguire SMI-S Provider, il computer host del provider deve soddisfare le seguenti specifiche:
 
