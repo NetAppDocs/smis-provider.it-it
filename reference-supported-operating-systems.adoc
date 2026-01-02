@@ -12,6 +12,8 @@ summary: 'Prima di installare il provider SMI-S, verificare che l"host Windows s
 
 
 [role="lead"]
+Ti consigliamo di installare SMI-S Provider sulla sua macchina virtuale Windows (VM) dedicata. Questa VM può trovarsi sullo stesso dominio per consentire una gestione sicura e comoda.
+
 Prima di installare il provider SMI-S, verificare che l'host Windows stia eseguendo un sistema operativo supportato.
 
 [cols="3*"]
@@ -22,36 +24,23 @@ Prima di installare il provider SMI-S, verificare che l'host Windows stia esegue
  a| 
 Windows
  a| 
-* Microsoft Windows Server 2016
-* Microsoft Windows Server 2019
-* Microsoft Windows Server 2022
 * Microsoft Windows Server 2025
+* Microsoft Windows Server 2022
+* Microsoft Windows Server 2019
+* Microsoft Windows Server 2016
 
  a| 
-Le librerie runtime di Microsoft Visual C{pp} 2010 vengono installate automaticamente durante l'installazione del provider SMI-S. Per evitare potenziali problemi relativi alle librerie runtime, è necessario installare Microsoft Visual C{pp} 2010 Redistributable Package (x86). dal seguente percorso: http://www.microsoft.com[]
+Le librerie runtime di Microsoft Visual C{pp} 2010 vengono installate automaticamente durante l'installazione di SMI-S Provider. Per evitare potenziali problemi relativi alle librerie di runtime, è necessario installare Microsoft Visual C{pp} 2010 Redistributable Package (x86) dal seguente percorso: http://www.microsoft.com[]
 
 |===
 
 
-== Requisito SCVMM UR 2,1
-
-Per gestire il file server NetApp con provider NetApp SMI-S 5.2.7 e versioni successive, è necessario rollup di aggiornamento (UR) 2,1 del System Center Virtual Machine Manager (SCVMM).
-
-Senza questo UR, SCVMM (versione 2016, 2019, 2022 o 2025) visualizza il valore delle `Total Capacity` opzioni e `Available Capacity` come `*0 GB*` per le condivisioni di file esistenti nel file server NetApp.
+== Assicurarsi che la macchina host del provider soddisfi le specifiche
 
 Per eseguire SMI-S Provider, il computer host del provider deve soddisfare le seguenti specifiche:
 
-* Il computer host del provider non può essere utilizzato per ospitare un nodo Hyper-V.
-* SCVMM non deve essere in esecuzione sul computer host del provider.
+* Il provider non può essere installato direttamente su un nodo Hyper-V. In alternativa, è possibile installarlo su una VM Hyper-V.
+* System Center Virtual Machine Manager (SCVMM) non deve essere in esecuzione sulla macchina host del provider.
 * Il computer host del provider non deve eseguire altri programmi che richiedono molta memoria.
-* Il computer host del provider non deve eseguire provider SMI-S di altri vendor.
-
-
-Sono supportati i seguenti hypervisor:
-
-* Microsoft Windows Server 2016 Hyper-V.
-* VMware ESX 5.0
-* VMware ESX 5.1
-* VMware ESX 5.5
-* VMware ESX 6.0
+* La macchina host del provider non deve eseguire provider SMI-S di altri fornitori.
 
