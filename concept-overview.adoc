@@ -17,7 +17,7 @@ Il provider SMI-S di NetApp è un'interfaccia basata su comandi che rileva e ges
 
 NetApp SMI-S Provider segue gli schemi standardizzati da due organizzazioni:
 
-* http://www.dmtf.org/home["Task force di gestione distribuita (DMTF)"^]
+* http://www.dmtf.org["Task force di gestione distribuita (DMTF)"^]
 * http://www.snia.org/home["SNIA (Storage Networking Industry Association)"^]
 
 
