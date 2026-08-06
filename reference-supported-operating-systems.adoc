@@ -35,6 +35,7 @@ Le librerie runtime di Microsoft Visual C{pp} 2010 vengono installate automatica
 |===
 
 
+[[ensure-the-provider-host-machine-meets-the-specifications]]
 == Assicurarsi che la macchina host del provider soddisfi le specifiche
 
 Per eseguire SMI-S Provider, il computer host del provider deve soddisfare le seguenti specifiche:

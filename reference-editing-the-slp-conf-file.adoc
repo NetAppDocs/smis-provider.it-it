@@ -21,6 +21,7 @@ Un utente con un nome utente e una password validi
 
 
 
+[[description]]
 == Descrizione
 
 Il `slp.conf` Il file di configurazione consente di modificare il numero di interfacce a cui un host ascolta le richieste SLP e il numero di indirizzi IP utilizzati da un host per il multicasting.

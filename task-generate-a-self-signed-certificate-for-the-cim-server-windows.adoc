@@ -75,6 +75,7 @@ La variabile viene impostata quando si apre una nuova sessione del prompt dei co
 
 
 
+[[result]]
 == Risultato
 
 L'intervallo di date del certificato inizia alla data corrente e viene eseguito per il numero di giorni specificato.
