@@ -442,7 +442,6 @@
   <block id="37735049e65188a885df4388c67153a4" category="summary">Quando un'applicazione client su un host rileva il server CIMOM utilizzando SLP (CIM-XML Encoding over HTTP), il client interroga CIMOM per gli oggetti condivisi (oggetti modellati nel linguaggio CIM). CIMOM carica gli oggetti condivisi e interroga il sistema di storage utilizzando API specifiche del dispositivo per le informazioni richieste.</block>
   <block id="9016abb1e0944872fd232fd72ca5bc80" category="doc">In che modo NetApp SMI-S Provider interagisce con un host</block>
   <block id="14f75c43461428b4df3f6d3980b25d02" category="paragraph">La seguente illustrazione mostra come il provider SMI-S di NetApp interagisce con un client di gestione WBEM quando il provider SMI-S riceve una query o un comando.</block>
-  <block id="707facb1331bad235d191a85d3686ab2" category="image-alt">interazione agente e host di smi</block>
   <block id="e805a7074bd5f3f2f6002db7b0f11fd5" category="summary">Il comando lun smi visualizza le informazioni LUN dei sistemi di storage.</block>
   <block id="ecb4091a0d7fe12a01800c4c519c074d" category="doc">lun smi</block>
   <block id="1b955e277f0738f3bdd0b7a18e1a7ecd" category="paragraph">Il<block ref="ecb4091a0d7fe12a01800c4c519c074d" prefix=" " category="inline-code"></block> Il comando visualizza le informazioni del LUN per i sistemi storage.</block>
@@ -618,7 +617,6 @@
   <block id="16aba3c6b0ae11e31224bc8fb95fe52f" category="paragraph">Creare un utente CIM di nome sydney con una password password1:</block>
   <block id="42c81e79f364b151f80c02c552b5850d" category="summary">Prima di poter gestire e monitorare i sistemi storage utilizzando SMI-S Provider, è necessario installare il software SMI-S Provider e convalidare la configurazione preliminare.</block>
   <block id="ab3ccb0be518e752d20f706d36d252c9" category="doc">Workflow di implementazione</block>
-  <block id="04c2ee750a71bee087a7164fa9418c8b" category="image-alt">workflow del provider smi</block>
   <block id="6b0fd0a659080ed97cfc94fb21d6fc96" category="summary">È possibile utilizzare il provider SMI-S per gestire la configurazione di CIMOM, ad esempio l'attivazione o la disattivazione delle connessioni HTTP e HTTPS e la modifica dei numeri delle porte HTTP e HTTPS. Per impostazione predefinita, le connessioni HTTP sono attivate, consentendo ai client di connettersi al server CIM senza utilizzare la crittografia SSL.</block>
   <block id="16d818bdfd52f3614e92671e0206fa1b" category="doc">Gestire le impostazioni di configurazione di CIMOM</block>
   <block id="7d6b3d18bec2ce6be3374ea0a9815106" category="paragraph">Se l'ambiente richiede traffico crittografato da e verso il server CIM, è necessario prima disattivare le connessioni HTTP e verificare che le connessioni HTTPS per il server CIM siano attivate.</block>
@@ -917,4 +915,6 @@
   <block id="cc2ad876e77ac64c0d4f8e5e89900549" category="list-text">Devi aver scaricato e installato OpenSSL sul tuo host Windows.</block>
   <block id="c104915e9f0d8e0313edcca7765f005e" category="list-text">Riavviare il servizio SMI-S Provider:</block>
   <block id="fa623328d311ec4315ab82a9a7303cbe" category="list-text"><block ref="fa623328d311ec4315ab82a9a7303cbe" category="inline-link-rx"></block></block>
+  <block id="f08445df01bad5aee6547cb7953d07d6" category="image-alt">Un diagramma che mostra i flussi di lavoro per la distribuzione del provider SMI-S, la convalida della preconfigurazione e le attività di gestione</block>
+  <block id="459eb66f775af707f84ca3f4c3f5f129" category="image-alt">Un diagramma che mostra un host che invia query al provider SMI-S CIMOM, repository, alle DLL del provider e al sistema storage</block>
 </blocks>

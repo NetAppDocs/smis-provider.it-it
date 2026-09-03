@@ -13,4 +13,4 @@ summary: Prima di poter gestire e monitorare i sistemi storage utilizzando SMI-S
 [role="lead"]
 Prima di poter gestire e monitorare i sistemi storage utilizzando SMI-S Provider, è necessario installare il software SMI-S Provider e convalidare la configurazione preliminare.
 
-image::../media/smi_s_provider_workflow.gif[workflow del provider smi]
+image::../media/smi_s_provider_workflow.gif[Un diagramma che mostra i flussi di lavoro per la distribuzione del provider SMI-S, la convalida della preconfigurazione e le attività di gestione]
