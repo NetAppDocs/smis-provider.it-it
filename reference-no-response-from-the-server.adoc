@@ -10,6 +10,9 @@ summary: Problemi riscontrati con NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider potrebbe non rispondere a una query quando non è stato aggiunto alcun sistema storage al repository CIMOM. Verifica se un sistema storage è registrato e aggiungine uno se necessario.
+
 * *Problema*
 +
 Il server non risponde quando richiesto.

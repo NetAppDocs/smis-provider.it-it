@@ -10,6 +10,9 @@ summary: Problemi riscontrati con NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+L'avviso 26130 si verifica quando la capacità di storage viene allocata a un gruppo di host in cui nessuno degli host ha accesso all'array di storage, impedendoti di posizionare macchine virtuali sul sistema storage. Concedi l'accesso necessario a ciascun host per risolvere questo avviso.
+
 
 
 [[message]]

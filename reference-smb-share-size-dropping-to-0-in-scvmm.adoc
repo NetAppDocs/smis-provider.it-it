@@ -10,6 +10,9 @@ summary: Problemi riscontrati con NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+La dimensione di una condivisione SMB 3.0 può ridursi a 0 in System Center Virtual Machine Manager (SCVMM) quando la reinizializzazione delle quote in ONTAP richiede molto tempo a causa di un intenso I/O, impedendo il provisioning di nuove VM. Risolvi questo problema regolando le impostazioni delle quote.
+
 * *Problema*
 +
 Le dimensioni delle condivisioni SMB 3.0 nuove o esistenti possono scendere a 0 in System Center Virtual Machine Manager (SCVMM).

@@ -10,6 +10,9 @@ summary: Problemi riscontrati con NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+Non puoi aggiungere un sistema storage NetApp al NetApp SMI-S Provider quando quel sistema utilizza HTTP o HTTPS su una porta diversa da quella predefinita. Aggiungi il sistema storage specificando esplicitamente la porta non predefinita.
+
 * *Problema*
 +
 Non è possibile aggiungere un sistema storage che esegue HTTP o HTTPS su una porta non predefinita.

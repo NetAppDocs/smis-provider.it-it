@@ -11,6 +11,9 @@ summary: Problemi riscontrati con NetApp SMI-S Provider.
 :pp: &#43;&#43;
 
 
+[role="lead"]
+NetApp SMI-S Provider potrebbe riscontrare problemi con le librerie di runtime su Windows. Installa il pacchetto ridistribuibile di Microsoft Visual C{pp} necessario per risolverli.
+
 * *Problema*
 +
 Si verificano problemi con la libreria runtime.

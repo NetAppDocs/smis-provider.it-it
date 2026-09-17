@@ -10,4 +10,7 @@ summary: Fornisce informazioni su funzionalità, limitazioni e problemi noti del
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider release notes descrivono le nuove funzionalità, le note di aggiornamento, i problemi risolti e le limitazioni note per ogni versione. Trova le note di rilascio attuali per NetApp SMI-S Provider 5.2.7 qui.
+
  https://library.netapp.com/ecm/ecm_download_file/ECMLP3344664["NetApp SMI-S Provider - Note di release"^]Descrivere le nuove funzioni, le note di aggiornamento, i problemi risolti, le limitazioni note e i problemi noti.

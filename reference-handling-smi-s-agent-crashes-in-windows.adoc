@@ -10,6 +10,9 @@ summary: Problemi riscontrati con NetApp SMI-S Provider.
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider può occasionalmente bloccarsi in un ambiente Windows. Raccogli i file di dump, di registro e di traccia generati al momento del blocco e inviali al supporto tecnico per ulteriori analisi.
+
 * *Problema*
 +
 Il provider SMI-S si blocca in Windows.

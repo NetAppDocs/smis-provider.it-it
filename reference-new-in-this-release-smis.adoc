@@ -10,6 +10,9 @@ summary: Novità del 5.2.7
 :imagesdir: ./media/
 
 
+[role="lead"]
+NetApp SMI-S Provider 5.2.7 introduce nuovi requisiti e limitazioni, tra cui le versioni di Windows e System Center Virtual Machine Manager (SCVMM) supportate. Esamina queste modifiche prima di implementare o aggiornare a questa versione.
+
 * Non è disponibile alcun percorso di aggiornamento per SMI-S Provider 5.2.7.
 * È necessario implementare SMI-S Provider 5.2.7 come nuova installazione.
 * La gestione di SnapMirror con Azure Site Recovery non è supportata in questa versione del provider SMI-S.
